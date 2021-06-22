@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check boxes and Radio Buttons -html</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body>
+
+<form action="test" method="get">
+<!--    we need to mention path from root in JSP    -->
+    <p> <input type="checkbox" name="addEmail" checked>Yes, add me to your mailing list.</p>
+
+    <p>Contact me by:<br>
+    <input type="radio" name="contactVia" value="Email">Email
+    <input type="radio" name="contactVia" value="Postal Mail">Postal Mail
+    <input type="radio" name="contactVia" value="Both" checked>Both</p>
+
+    <p>I'm intersted in these types of music:<br>
+    <input type="checkbox" name="rock">Rock<br>
+    <input type="checkbox" name="country">Country<br>
+    <input type="checkbox" name="bluegrass">Bluegrass</p>
+    <br>
+
+    <label for="country checkbox">Select a country:</label><br>
+    <select id="country checkbox" name="country">
+        <option value="USA" selected>United States</option>
+        <option value="CAN">Canada</option>
+        <option value="MEX">Mexico</option>
+    </select>
+    <br>
+    <label for="country list">Country:</label><br>
+    <select id="country list" name="country" size="3" multiple>
+        <option value="USA" selected>United States</option>
+        <option value="CAN">Canada</option>
+        <option value="MEX">Mexico</option>
+    </select>
+    <br>
+    <input type="submit" value="Join Now" class="margin_left">
+</form>
+</body>
+</html>
